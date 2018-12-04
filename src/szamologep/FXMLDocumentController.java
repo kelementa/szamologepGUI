@@ -39,6 +39,9 @@ public class FXMLDocumentController implements Initializable {
         kifejezes = kifejezes.replace(",", ".");
         kifejezes = kifejezes.replace("pi", "Math.PI");
         kifejezes = kifejezes.replace("sqrt", "Math.sqrt");
+        kifejezes = kifejezes.replace("abs", "Math.abs");
+        kifejezes = kifejezes.replace("rnd", "Math.random");
+        
         
         try {
             eredmeny = "" + js.eval(kifejezes);
